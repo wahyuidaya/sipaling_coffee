@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Coffee</title>
+    <title>Snack</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
@@ -12,19 +12,31 @@
 <body>
     <!-- Navbar -->
     <div class="navbar">
-        <a href="#"> SIPALING COFFEE </a>
+        <a href="#">SIPALING COFFEE</a>
         <div>
-          <a href="index.html#home"> HOME </a>
-          <a href="index.html#about"> ABOUT </a>
-          <a href="index.html#menu"> MENU </a>
-          <a href="index.html#contact"> CONTACT </a>
-  
+          <a href="index.html#home">HOME</a>
+          <a href="index.html#about">ABOUT</a>
+          <a href="index.html#menu">MENU</a>
+          <a href="index.html#contact">CONTACT</a>
           <input type="text" id="searchInput" placeholder="Cari..." name="query" />
           <button class="submit" onclick="toggleSearch()">
-             <i class="fas fa-search"></i>
-           </button>
-         </div>
-     </div>
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+        <!-- Hamburger (mobile only) -->
+        <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+    </div>
+
+    <!-- Mobile Overlay Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <button class="close-btn" onclick="toggleMobileMenu()">&times;</button>
+      <a href="index.html#home" onclick="toggleMobileMenu()">HOME</a>
+      <a href="index.html#about" onclick="toggleMobileMenu()">ABOUT</a>
+      <a href="index.html#menu" onclick="toggleMobileMenu()">MENU</a>
+      <a href="index.html#contact" onclick="toggleMobileMenu()">CONTACT</a>
+    </div>
 
       <section id="menu">
         <div class="menu-content">
@@ -62,30 +74,30 @@
               <h3>Mini Sausages</h3>
               <p>Sosis kecil yang digoreng atau dipanggang, sering disajikan dengan mustard atau saus sambal.</p>
             </div>
+          </div>
+          <div class="menu-title">
+            <h2>SWEET <span>SNACK</span></h2>
+          </div>
+          <div class="menu-grid" id="menuGrid2">
+            <div class="menu-item">
+                  <img alt="Gambar Brownies" height="100" src="img/sweet-brownies.jpg" width="100"/>
+                <h3>Brownies</h3>
+                <p>Kue cokelat lembut dan kaya rasa yang sering dihiasi dengan kacang, cokelat chips, atau es krim vanila.</p>
             </div>
-            <div class="menu-title">
-              <h2>SWEET <span>SNACK</span></h2>
+            <div class="menu-item">
+              <img alt="Gambar Kue Cubit" height="100" src="img/sweet-kue_cubit.jpeg" width="100"/>      
+              <h3>Kue Cubit</h3>
+              <p>Kue mini yang lembut dengan rasa manis, sering dihias dengan topping seperti meses, keju, atau cokelat leleh.</p>
             </div>
-            <div class="menu-grid" id="menuGrid">
-              <div class="menu-item">
-                    <img alt="Gambar Brownies" height="100" src="img/sweet-brownies.jpg" width="100"/>
-                  <h3>Brownies</h3>
-                  <p>Kue cokelat lembut dan kaya rasa yang sering dihiasi dengan kacang, cokelat chips, atau es krim vanila.</p>
-              </div>
-              <div class="menu-item">
-                <img alt="Gambar Kue Cubit" height="100" src="img/sweet-kue_cubit.jpeg" width="100"/>      
-                <h3>Kue Cubit</h3>
-                <p>Kue mini yang lembut dengan rasa manis, sering dihias dengan topping seperti meses, keju, atau cokelat leleh. Biasanya dimasak setengah matang untuk tekstur creamy di dalamnya.</p>
-              </div>
-              <div class="menu-item">
-                <img alt="Gambar Donat" height="100" src="img/sweet-donat.jpeg" width="100"/>      
-                <h3>Donat</h3>
-                <p>Pisang goreng dengan lapisan cokelat cair, memberikan rasa manis dan gurih yang memikat.</p>
-              </div>
-              <div class="menu-item">
-                  <img alt="Gambar Pisang Goreng Cokelat" height="100" src="img/sweet-pisang_goreng_cokelat.jpg" width="100"/>
-                <h3>Pisang Goreng Cokelat</h3>
-                <p>Pisang goreng dengan lapisan cokelat cair, memberikan rasa manis dan gurih yang memikat.</p>
+            <div class="menu-item">
+              <img alt="Gambar Donat" height="100" src="img/sweet-donat.jpeg" width="100"/>      
+              <h3>Donat</h3>
+              <p>Donat lembut dengan berbagai topping manis seperti gula halus, cokelat, atau meses warna-warni.</p>
+            </div>
+            <div class="menu-item">
+                <img alt="Gambar Pisang Goreng Cokelat" height="100" src="img/sweet-pisang_goreng_cokelat.jpg" width="100"/>
+              <h3>Pisang Goreng Cokelat</h3>
+              <p>Pisang goreng dengan lapisan cokelat cair, memberikan rasa manis dan gurih yang memikat.</p>
             </div>
             <div class="menu-item">
               <img alt="Gambar Churros" height="100" src="img/sweet-churros.jpg" width="100"/>      
@@ -97,10 +109,13 @@
               <h3>Macaron</h3>
               <p>Kue kecil berbentuk bulat yang terbuat dari meringue, dengan isian krim, ganache, atau selai, memiliki tekstur lembut dan renyah.</p>
             </div>
-            </div>
           </div>
-        </section>
+        </div>
+      </section>
     
     <script src='main.js'></script>
+    <script>
+    function toggleMobileMenu(){ document.getElementById("mobileMenu").classList.toggle("open"); }
+    </script>
 </body>
 </html>

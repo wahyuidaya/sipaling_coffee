@@ -12,18 +12,30 @@
 <body>
     <!-- Navbar -->
     <div class="navbar">
-        <a href="#"> SIPALING COFFEE </a>
+        <a href="#">SIPALING COFFEE</a>
         <div>
-          <a href="index.html#home"> HOME </a>
-          <a href="index.html#about"> ABOUT </a>
-          <a href="index.html#menu"> MENU </a>
-          <a href="index.html#contact"> CONTACT </a>
-  
-         <input type="text" id="searchInput" placeholder="Cari..." name="query" />
-         <button class="submit" onclick="toggleSearch()">
+          <a href="index.html#home">HOME</a>
+          <a href="index.html#about">ABOUT</a>
+          <a href="index.html#menu">MENU</a>
+          <a href="index.html#contact">CONTACT</a>
+          <input type="text" id="searchInput" placeholder="Cari..." name="query" />
+          <button class="submit" onclick="toggleSearch()">
             <i class="fas fa-search"></i>
           </button>
         </div>
+        <!-- Hamburger (mobile only) -->
+        <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+    </div>
+
+    <!-- Mobile Overlay Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <button class="close-btn" onclick="toggleMobileMenu()">&times;</button>
+      <a href="index.html#home" onclick="toggleMobileMenu()">HOME</a>
+      <a href="index.html#about" onclick="toggleMobileMenu()">ABOUT</a>
+      <a href="index.html#menu" onclick="toggleMobileMenu()">MENU</a>
+      <a href="index.html#contact" onclick="toggleMobileMenu()">CONTACT</a>
     </div>
 
       <section id="menu">
@@ -66,12 +78,12 @@
           <div class="menu-title">
             <h2>COLD <span>COFFEE</span></h2>
           </div>
-          <div class="menu-grid" id="menuGrid">
-            <adiv class="menu-item">
+          <div class="menu-grid" id="menuGrid2">
+            <div class="menu-item">
                   <img alt="Gambar Iced Americano" height="100" src="img/cold-iced_americano.jpg" width="100"/>
                 <h3>Iced Americano</h3>
                 <p>Kombinasi espresso dan air dingin dengan tambahan es batu. Rasanya ringan dan menyegarkan.</p>
-            </adiv>
+            </div>
             <div class="menu-item">
               <img alt="Gambar Iced Latte" height="100" src="img/cold-iced_latte.jpg" width="100"/>      
               <h3>Iced Latte</h3>
@@ -80,28 +92,30 @@
             <div class="menu-item">
               <img alt="Gambar Cold Brew" height="100" src="img/cold-cold_brew.jpg" width="100"/>      
               <h3>Cold Brew</h3>
-              <p>Kopi yang diseduh dengan air dingin selama 12-24 jam. Rasanya lebih halus, rendah keasaman, dan sedikit manis secara alami.
-                Iced Caramel Macchiato.</p>
+              <p>Kopi yang diseduh dengan air dingin selama 12-24 jam. Rasanya lebih halus, rendah keasaman, dan sedikit manis secara alami.</p>
             </div>
             <div class="menu-item">
                 <img alt="Gambar Iced Caramel Macchiato" height="100" src="img/cold-iced_caramel_macchiato.jpg" width="100"/>
               <h3>Iced Caramel Macchiato</h3>
               <p>Kombinasi espresso, susu dingin, dan sirup karamel, dihias dengan lapisan karamel di atas es.</p>
-          </div>
-          <div class="menu-item">
-            <img alt="Gambar Iced Mocha" height="100" src="img/cold-iced_mocha.jpg" width="100"/>      
-            <h3>Iced Mocha</h3>
-            <p>Campuran espresso, cokelat, susu dingin, dan es batu. Rasa manis cokelat berpadu sempurna dengan kopi.</p>
-          </div>
-          <div class="menu-item">
-            <img alt="Gambar Affogato" height="100" src="img/cold-affogato.jpg" width="100"/>      
-            <h3>Affogato</h3>
-            <p>Kombinasi es krim vanila yang disiram dengan espresso panas. Sering dijadikan menu dessert sekaligus minuman.</p>
-          </div>
+            </div>
+            <div class="menu-item">
+              <img alt="Gambar Iced Mocha" height="100" src="img/cold-iced_mocha.jpg" width="100"/>      
+              <h3>Iced Mocha</h3>
+              <p>Campuran espresso, cokelat, susu dingin, dan es batu. Rasa manis cokelat berpadu sempurna dengan kopi.</p>
+            </div>
+            <div class="menu-item">
+              <img alt="Gambar Affogato" height="100" src="img/cold-affogato.jpg" width="100"/>      
+              <h3>Affogato</h3>
+              <p>Kombinasi es krim vanila yang disiram dengan espresso panas. Sering dijadikan menu dessert sekaligus minuman.</p>
+            </div>
           </div>
         </div>
       </section>
     
     <script src='main.js'></script>
+    <script>
+    function toggleMobileMenu(){ document.getElementById("mobileMenu").classList.toggle("open"); }
+    </script>
 </body>
 </html>

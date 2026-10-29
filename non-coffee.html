@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Coffee</title>
+    <title>Non Coffee</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
@@ -12,19 +12,31 @@
 <body>
     <!-- Navbar -->
     <div class="navbar">
-        <a href="#"> SIPALING COFFEE </a>
+        <a href="#">SIPALING COFFEE</a>
         <div>
-          <a href="index.html#home"> HOME </a>
-          <a href="index.html#about"> ABOUT </a>
-          <a href="index.html#menu"> MENU </a>
-          <a href="index.html#contact"> CONTACT </a>
-  
+          <a href="index.html#home">HOME</a>
+          <a href="index.html#about">ABOUT</a>
+          <a href="index.html#menu">MENU</a>
+          <a href="index.html#contact">CONTACT</a>
           <input type="text" id="searchInput" placeholder="Cari..." name="query" />
           <button class="submit" onclick="toggleSearch()">
-             <i class="fas fa-search"></i>
-           </button>
-         </div>
-     </div>
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+        <!-- Hamburger (mobile only) -->
+        <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+    </div>
+
+    <!-- Mobile Overlay Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <button class="close-btn" onclick="toggleMobileMenu()">&times;</button>
+      <a href="index.html#home" onclick="toggleMobileMenu()">HOME</a>
+      <a href="index.html#about" onclick="toggleMobileMenu()">ABOUT</a>
+      <a href="index.html#menu" onclick="toggleMobileMenu()">MENU</a>
+      <a href="index.html#contact" onclick="toggleMobileMenu()">CONTACT</a>
+    </div>
 
       <section id="menu">
         <div class="menu-content">
@@ -62,30 +74,30 @@
               <h3>Hot Red Velvet</h3>
               <p>Minuman berbasis bubuk red velvet yang dicampur dengan susu steamed, menghasilkan rasa manis dengan aroma khas cokelat dan warna merah yang menarik.</p>
             </div>
+          </div>
+          <div class="menu-title">
+            <h2>COLD <span>NON COFFEE</span></h2>
+          </div>
+          <div class="menu-grid" id="menuGrid2">
+            <div class="menu-item">
+                  <img alt="Gambar Iced Matcha Latte" height="100" src="img/cold-iced_matcha_latte.jpg" width="100"/>
+                <h3>Iced Matcha Latte</h3>
+                <p>Kombinasi bubuk teh hijau (matcha), susu dingin, dan es batu. Rasanya segar dengan aroma khas matcha.</p>
             </div>
-            <div class="menu-title">
-              <h2>COLD <span>NON COFFEE</span></h2>
+            <div class="menu-item">
+              <img alt="Gambar Iced Chocolate" height="100" src="img/cold-iced_chocolate.png" width="100"/>      
+              <h3>Iced Chocolate</h3>
+              <p>Minuman cokelat dingin yang creamy dan manis, sering dihias dengan whipped cream atau saus cokelat.</p>
             </div>
-            <div class="menu-grid" id="menuGrid">
-              <div class="menu-item">
-                    <img alt="Gambar Iced Matcha Latte" height="100" src="img/cold-iced_matcha_latte.jpg" width="100"/>
-                  <h3>Iced Matcha Latte</h3>
-                  <p>Kombinasi bubuk teh hijau (matcha), susu dingin, dan es batu. Rasanya segar dengan aroma khas matcha.</p>
-              </div>
-              <div class="menu-item">
-                <img alt="Gambar Iced Chocolate" height="100" src="img/cold-iced_chocolate.png" width="100"/>      
-                <h3>Iced Chocolate</h3>
-                <p>Minuman cokelat dingin yang creamy dan manis, sering dihias dengan whipped cream atau saus cokelat.</p>
-              </div>
-              <div class="menu-item">
-                <img alt="Gambar Iced Red Velvet" height="100" src="img/cold-iced_red_velvet.jpg" width="100"/>      
-                <h3>Iced Red Velvet</h3>
-                <p>Campuran bubuk red velvet, susu dingin, dan es batu. Rasanya manis dengan warna merah yang menggoda.</p>
-              </div>
-              <div class="menu-item">
-                  <img alt="Gambar Iced Lemon Tea" height="100" src="img/cold-iced_lemon_tea.jpg" width="100"/>
-                <h3>Iced Lemon Tea</h3>
-                <p>Teh hitam dingin yang diberi perasan lemon segar dan sedikit gula, menghasilkan rasa segar yang cocok untuk hari panas.</p>
+            <div class="menu-item">
+              <img alt="Gambar Iced Red Velvet" height="100" src="img/cold-iced_red_velvet.jpg" width="100"/>      
+              <h3>Iced Red Velvet</h3>
+              <p>Campuran bubuk red velvet, susu dingin, dan es batu. Rasanya manis dengan warna merah yang menggoda.</p>
+            </div>
+            <div class="menu-item">
+                <img alt="Gambar Iced Lemon Tea" height="100" src="img/cold-iced_lemon_tea.jpg" width="100"/>
+              <h3>Iced Lemon Tea</h3>
+              <p>Teh hitam dingin yang diberi perasan lemon segar dan sedikit gula, menghasilkan rasa segar yang cocok untuk hari panas.</p>
             </div>
             <div class="menu-item">
               <img alt="Gambar Iced Lychee Tea" height="100" src="img/cold-iced_lychee_tea.jpg" width="100"/>      
@@ -97,10 +109,13 @@
               <h3>Iced Honey Lemon</h3>
               <p>Campuran air lemon dingin dengan madu dan es batu, memberikan rasa manis alami dan segar yang menyegarkan.</p>
             </div>
-            </div>
           </div>
-        </section>
+        </div>
+      </section>
     
     <script src='main.js'></script>
+    <script>
+    function toggleMobileMenu(){ document.getElementById("mobileMenu").classList.toggle("open"); }
+    </script>
 </body>
 </html>
