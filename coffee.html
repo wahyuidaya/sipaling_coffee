@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Coffee</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet"/>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="#"> SIPALING COFFEE </a>
+        <div>
+          <a href="index.html#home"> HOME </a>
+          <a href="index.html#about"> ABOUT </a>
+          <a href="index.html#menu"> MENU </a>
+          <a href="index.html#contact"> CONTACT </a>
+  
+         <input type="text" id="searchInput" placeholder="Cari..." name="query" />
+         <button class="submit" onclick="toggleSearch()">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+    </div>
+
+      <section id="menu">
+        <div class="menu-content">
+          <div class="menu-title">
+            <h2>HOT <span>COFFEE</span></h2>
+          </div>
+          <div class="menu-grid" id="menuGrid">
+            <div class="menu-item">
+                  <img alt="Gambar Espresso" height="100" src="img/hot-espresso.jpg" width="100"/>
+                <h3>Espresso</h3>
+                <p>Minuman kopi murni dengan rasa yang kuat dan pekat. Sering menjadi dasar untuk berbagai minuman kopi lainnya.</p>
+            </div>
+            <div class="menu-item">
+              <img alt="Gambar Cappuccino" height="100" src="img/hot-cappucino.jpeg" width="100"/>      
+              <h3>Cappuccino</h3>
+              <p>Kombinasi espresso, susu steamed, dan busa susu di atasnya. Kadang dihias dengan taburan bubuk cokelat atau kayu manis.</p>
+            </div>
+            <div class="menu-item">
+              <img alt="Gambar Latte" height="100" src="img/hot-latte.jpeg" width="100"/>      
+              <h3>Latte</h3>
+              <p>Minuman dengan perbandingan lebih banyak susu steamed dibanding espresso, menghasilkan rasa yang lebih creamy dan lembut.</p>
+            </div>
+            <div class="menu-item">
+                <img alt="Gambar Americano" height="100" src="img/hot-americano.jpg" width="100"/>
+              <h3>Americano</h3>
+              <p>Espresso yang ditambahkan air panas, menciptakan rasa kopi yang lebih ringan dibanding espresso.</p>
+            </div>
+            <div class="menu-item">
+                <img alt="Gambar Mocha" height="100" src="img/hot-mocha.jpeg" width="100"/>      
+                <h3>Mocha</h3>
+                <p>Kombinasi espresso, cokelat, dan susu steamed, memberikan rasa manis dan kaya cokelat.</p>
+            </div>
+            <div class="menu-item">
+                <img alt="Gambar Macchiato" height="100" src="img/hot-macchiato.jpeg" width="100"/>      
+                <h3>Macchiato</h3>
+                <p>Espresso dengan sedikit busa susu di atasnya, menciptakan rasa kopi yang kuat dengan sentuhan creamy.</p>
+            </div>
+          </div>
+          <div class="menu-title">
+            <h2>COLD <span>COFFEE</span></h2>
+          </div>
+          <div class="menu-grid" id="menuGrid">
+            <adiv class="menu-item">
+                  <img alt="Gambar Iced Americano" height="100" src="img/cold-iced_americano.jpg" width="100"/>
+                <h3>Iced Americano</h3>
+                <p>Kombinasi espresso dan air dingin dengan tambahan es batu. Rasanya ringan dan menyegarkan.</p>
+            </adiv>
+            <div class="menu-item">
+              <img alt="Gambar Iced Latte" height="100" src="img/cold-iced_latte.jpg" width="100"/>      
+              <h3>Iced Latte</h3>
+              <p>Espresso yang dicampur dengan susu dingin dan es batu, memberikan rasa creamy dengan sensasi dingin.</p>
+            </div>
+            <div class="menu-item">
+              <img alt="Gambar Cold Brew" height="100" src="img/cold-cold_brew.jpg" width="100"/>      
+              <h3>Cold Brew</h3>
+              <p>Kopi yang diseduh dengan air dingin selama 12-24 jam. Rasanya lebih halus, rendah keasaman, dan sedikit manis secara alami.
+                Iced Caramel Macchiato.</p>
+            </div>
+            <div class="menu-item">
+                <img alt="Gambar Iced Caramel Macchiato" height="100" src="img/cold-iced_caramel_macchiato.jpg" width="100"/>
+              <h3>Iced Caramel Macchiato</h3>
+              <p>Kombinasi espresso, susu dingin, dan sirup karamel, dihias dengan lapisan karamel di atas es.</p>
+          </div>
+          <div class="menu-item">
+            <img alt="Gambar Iced Mocha" height="100" src="img/cold-iced_mocha.jpg" width="100"/>      
+            <h3>Iced Mocha</h3>
+            <p>Campuran espresso, cokelat, susu dingin, dan es batu. Rasa manis cokelat berpadu sempurna dengan kopi.</p>
+          </div>
+          <div class="menu-item">
+            <img alt="Gambar Affogato" height="100" src="img/cold-affogato.jpg" width="100"/>      
+            <h3>Affogato</h3>
+            <p>Kombinasi es krim vanila yang disiram dengan espresso panas. Sering dijadikan menu dessert sekaligus minuman.</p>
+          </div>
+          </div>
+        </div>
+      </section>
+    
+    <script src='main.js'></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Sipaling Coffee</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <a>SIPALING COFFEE</a>
+    <div>
+      <a href="#home">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#menu">MENU</a>
+      <a href="#contact">CONTACT</a>
+      <input type="text" id="searchInput" placeholder="Cari..." name="query" />
+      <button class="submit" onclick="toggleSearch()">
+        <i class="fas fa-search"></i>
+      </button>
+    </div>
+  </div>
+  
+
+  <!-- Halaman Utama -->
+  <section id="home">
+    <div class="home-content">
+      <img src="img/bakground (3).jpg" alt="coffee background" width="1920" height="1080" />
+      <h1>MULAI HARIMU DENGAN <br /> SECANGKIR KOPI</h1>
+      <p>
+        Dengan secangkir kopi, kamu siap untuk menghadapi segala hal yang datang. Jadi, tunggu apa lagi? Mulailah hari ini dengan kopi dan temukan semangat baru untuk menjalani hari!
+      </p>
+    </div>
+  </section>
+
+  <!-- Halaman About -->
+  <section id="about">
+    <div class="about">
+      <div class="about-title">
+        <h2><span>TENTANG</span>KAMI</h2>
+      </div>
+      <div class="about-container">
+        <div class="about-image">
+          <img src="img/about-img.jpeg" alt="Coffee Image" />
+        </div>
+        <div class="about-content">
+          <h2>Apa Itu Sipaling Coffee?</h2>
+          <p>
+            SIPALING COFFEE adalah tempat di mana Anda bisa menikmati kopi berkualitas tinggi yang diseduh dengan cinta dan passion. Misi kami adalah memberikan suasana yang nyaman untuk bersantai sambil menikmati setiap tegukan kopi.
+          </p>
+          <p>
+            Bergabunglah dengan kami untuk menikmati secangkir kopi dan momen ketenangan. Baik Anda sedang terburu-buru atau membutuhkan waktu istirahat, kami ada untuk membuat hari Anda sedikit lebih baik.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Halaman Menu -->
+  <section id="menu">
+    <div class="menu-content">
+      <div class="menu-title">
+        <h2><span>MENU</span>KAMI</h2>
+      </div>
+      <div class="menu-grid" id="menuGrid">
+        <a href="coffee.html" class="menu-item">
+          <img src="img/coffee.jpeg" alt="gambar jenis Coffee" width="100" height="100" />
+          <h3>COFFEE</h3>
+          <p>
+            Menyajikan berbagai pilihan kopi dengan kualitas biji kopi terbaik, dipanggang untuk memberikan rasa yang penuh dan memuaskan bagi para penggemar kopi.
+          </p>
+        </a>
+        <a href="non-coffee.html" class="menu-item">
+          <img src="img/non-coffee.jpeg" alt="gambar jenis Non Coffee" width="100" height="100" />
+          <h3>NON COFFEE</h3>
+          <p>
+            Menawarkan berbagai minuman tanpa kafein yang cocok bagi mereka yang mencari rasa segar dan nyaman, seperti hot chocolate dan matcha latte.
+          </p>
+        </a>
+        <a href="snack.html" class="menu-item">
+          <img src="img/snack.jpg" alt="gambar jenis Snack" width="100" height="100" />
+          <h3>SNACK</h3>
+          <p>
+            Camilan lezat yang bisa dinikmati bersama minuman Anda, baik itu yang manis maupun gurih, memberikan variasi rasa yang cocok di setiap kesempatan.
+          </p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Halaman Contact -->
+  <section id="contact">
+    <div class="contact-content">
+      <div class="contact-title">
+        <h2><span>KONTAK</span>KAMI</h2>
+      </div>
+      <div class="content">
+        <div class="map-form">
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1101556094786!2d106.96784407324887!3d-6.2492129937392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698c5204032a97%3A0x7dd864ce65061cd8!2sUniversitas%20Gunadarma%20Kampus%20J1!5e0!3m2!1sid!2sid!4v1735232316617!5m2!1sid!2sid" width="600" height="342"></iframe>
+          </div>
+          <div class="form">
+            <h2>HUBUNGI KAMI</h2>
+            <form id="contactForm">
+              <input type="text" name="nama" placeholder="Nama" required />
+              <input type="email" name="email" placeholder="Email" required />
+              <textarea name="pesan" id="pesan" placeholder="Pesan" required></textarea>
+              <button type="submit">Kirim Pesan</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Halaman Footer -->
+  <section id="footer">
+    <div class="footer-content">
+      <div class="social-icons">
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://id.pinterest.com/"><i class="fab fa-pinterest"></i></a>
+      </div>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="credits">
+        Dibuat Oleh <span>Kelompok4</span> | Seluruh hak cipta
+      </div>
+    </div>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+</html>

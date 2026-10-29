@@ -1,0 +1,265 @@
+/* General Reset */
+*, html, body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;   
+}
+
+body {
+  background-color: #111;
+}
+
+/* Navbar */
+.navbar {
+  width: 94%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 38px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-bottom: 1px solid #f5e6cc;
+  position: fixed;
+  cursor: pointer;
+}
+.navbar a {
+  text-decoration: none;
+  color: #f5e6cc;
+  padding: 0 13px;
+  font-size: 18px;
+}
+.navbar a:first-child {
+  margin-left: 30px;
+}
+
+.navbar button {
+  margin-right: 30px;
+}
+.navbar a:hover {
+  color: #d4b483;
+  transition: 0.3s;
+}
+
+/* Halaman Home */
+.home-content {
+  padding: 110px 0 0 90px;
+  height: 93vh;
+  width: 50%;
+}
+.home-content img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.home-content h1 {
+  font-size: 50px;
+  color: #fff;
+}
+.home-content p {
+  color: #796c56;
+  font-size: 18px;
+}
+
+/* Halaman About */
+.about {
+  padding: 100px 90px;
+  background-color: #f5e6cc;
+}
+.about-title {
+  color: #333;
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.about-title h2 span {
+  color: #d2691e;
+  margin-right: 8px;
+}
+.about-container {
+  display: flex;
+  height: 300px;
+  background-color: #f5e6cc;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+.about-image {
+  flex: 1;
+  background-color: #ddd;
+  display: flex;
+}
+.about-image img {
+  width: 100%;
+  object-fit: cover;
+}
+.about-content {
+  flex: 1;
+  padding: 10px 0 0 30px;
+}
+.about-content h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+}
+.about-content p {
+  color: #555;
+  font-size: 15px;
+  line-height: 27px;
+}
+
+/* Halaman Menu */
+.menu-content {
+  padding: 120px 90px 0 90PX;
+}
+.menu-title {
+  font-size: 26px;
+  color: #bababa;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.menu-title h2 span {
+  color: #d2691e;
+  margin-right: 8px;
+}
+.menu-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.menu-item {
+  width: 30%;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.menu-item:hover {
+  background-color: #555;
+  transition: 0.5s;
+}
+.menu-grid a {
+  text-decoration: none;
+  color: white;
+}
+.menu-item img {
+  border-radius: 50%;
+}
+.menu-item h3 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #fff;
+}
+.menu-item p {
+  font-size: 13px;
+  color: #d4a373;
+}
+
+/* Halaman Contact */
+.contact-content {
+  padding: 90px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-title {
+  display: flex;
+  justify-content: center;
+  font-size: 27px;
+  color: #bababa;
+  margin-bottom: 30px;
+}
+.contact-title h2 span {
+  color: #d2691e;
+  margin-right: 8px;
+}
+.content {
+  width: 85%;
+}
+.map-form {
+  display: flex;
+  border-radius: 8px;
+  background-color: #1a1a1a;
+}
+.map {
+  flex: 1;
+}
+.form {
+  flex: 1;
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form h2 {
+  margin-bottom: 30px;
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+}
+.form input, .form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+}
+
+.form button {
+  padding: 10px 25px;
+  margin: 0 170px;
+  border: none;
+  border-radius: 8px;
+  background-color: #d4a373;
+  color: #000;
+  font-size: 15px;
+  cursor: pointer;
+}
+.form button:hover {
+  background-color: #b5835a;
+}
+
+/* Halaman Footer */
+.footer-content {
+  text-align: center;
+  padding: 20px;
+  background-color: #1a1a1a;
+}
+.footer-content .social-icons {
+  margin-bottom: 20px;
+}
+.footer-content .social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #d4a373;
+  font-size: 24px;
+}
+.footer-content .nav-links {
+  margin-bottom: 20px;
+}
+.footer-content .nav-links a {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 10px 20px;
+  color: #fff;
+  border: 1px solid #fff;
+  text-decoration: none;
+}
+.footer-content .nav-links a:hover {
+  transition: 0.3s;
+  background-color: #b5835a;
+}
+.footer-content .credits {
+color: #d4a373;
+}
+.footer-content .credits span {
+  color: #fff;
+}
