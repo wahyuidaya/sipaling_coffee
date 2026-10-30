@@ -156,6 +156,24 @@ body {
   margin: 10px 0;
   color: #fff;
 }
+.btn-detail-menu {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 8px 18px;
+  background-color: #d2691e;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 10px rgba(210, 105, 30, 0.3);
+}
+.menu-item:hover .btn-detail-menu {
+  background-color: #e07a2d;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(210, 105, 30, 0.45);
+}
 .menu-item p {
   font-size: 13px;
   color: #d4a373;
